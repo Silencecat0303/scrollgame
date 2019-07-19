@@ -27,25 +27,6 @@
 </div>
 <div id="cone">
 </div>
-<div >
-<button class="btn btn-primary" id="slide">SlideDown</button>
-<!-- <p id="pp">
-    123123123<br>
-    4455555555555555<br>
-    679789879878<br>
-    1231233333333333333333333333333333333333333<br>
-</p> -->
-<table>
-    <tr >
-        <td id="pp">
-                123123123<br>
-                4455555555555555<br>
-                679789879878<br>
-                1231233333333333333333333333333333333333333<br>
-        </td>
-    </tr>
-</table>
-</div>
 <script>
 $(window).scroll(function(){
     if($(this).scrollTop()<500){
@@ -81,8 +62,5 @@ for(let i=0;i<color.length;i++){
 $("#select").change(function(){
     let background=$("#select :selected").text();
     $("body").attr("class",`bg-${background}`);
-});
-$("#slide").on("click",function(){
-    $("#pp").slideToggle();
 });
 </script>
